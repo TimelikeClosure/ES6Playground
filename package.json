@@ -6,7 +6,8 @@
   "scripts": {
     "start": "node app.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "init": "node init.js"
+    "init": "node init.js",
+    "finish": "node finish.js"
   },
   "repository": {
     "type": "git",
