@@ -1,0 +1,15 @@
+/*
+Given an array of users, return 'true' if every user has submitted a request form.  Assign the result to the variable 'hasSumbmitted'.
+ */
+//  CODE START
+var users = [
+  { id: 21, hasSubmitted: true },
+  { id: 62, hasSubmitted: false },
+  { id: 4, hasSubmitted: true }
+];
+
+var hasSubmitted = users.every(function(user){
+    return user.hasSubmitted;
+});
+//  CODE FINISH
+console.log(hasSubmitted);
