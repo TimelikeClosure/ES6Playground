@@ -1,7 +1,9 @@
 "use strict";
 
-var scratchpadConfig = require('./scratchpad.json');
+let { chapter, video, exercise } = require('./scratchpad.json');
+chapter = (chapter < 10) ? "0" + chapter : "" + chapter;
+video = (video < 10) ? "0" + video : "" + video;
 
-var scratchpad = './' + scratchpadConfig.chapter + (scratchpadConfig.exercise ? "e" : '_') + scratchpadConfig.video + '/index.js';
+const scratchpad = `./${chapter}/${(exercise ? 'exercises' : 'lectures')}/${video}/index.js`;
 
 require(scratchpad);
